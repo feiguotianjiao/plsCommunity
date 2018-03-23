@@ -1,0 +1,28 @@
+<!--myIndex.wxml-->
+<import src="/utils/wetoast/wetoast.wxml"/>
+<template is="wetoast" data="{{...__wetoast__}}"/>
+<view class="container">
+  <navigator class="member" url='/pages/member/addAddress/addAddress?adId={{addressId}}'>
+    <image class="img" src="{{userInfo.avatarUrl}}"></image>
+    <view class="nickname">{{userInfo.nickName}}</view>
+    <view class="level">普通会员</view>
+  </navigator>
+  <view class="menus">
+    <view class='title'>我的订单</view>
+    <navigator url="/pages/orders/orderList/orderList" class="item all">
+      全部订单
+    </navigator>
+    <!--<navigator url="/pages/orders/orderList/orderList" class="item pre">
+      待付款
+    </navigator>
+    <navigator url="/pages/orders/orderList/orderList" class="item complete">
+      已付款
+    </navigator>-->
+  </view>
+  <view class="menus">
+    <view class='title'>其他服务</view>
+    <navigator url="/pages/member/about/about" class="item about">
+      关于我们
+    </navigator>
+  </view>
+</view>

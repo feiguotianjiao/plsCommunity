@@ -1,0 +1,139 @@
+/**detail.wxss**/
+.detail_swiper {
+  width: 750rpx;
+  height: 520rpx;
+}
+.detail_swiper image{
+  height: 520rpx;
+}
+
+.name{
+  width:710rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  padding: 0rpx 20rpx;
+  font-size: 30rpx;
+  color: #000;
+}
+.buyMes{
+  width:710rpx;
+  padding:10rpx 20rpx;
+  height: 84rpx;
+  background-color: #fef36c;
+}
+.buyMes .price{
+  float: left;
+  padding-right: 20rpx;
+}
+.buyMes .promotion{
+  height: 52rpx;
+  color: #ff3d00;
+  line-height: 52rpx;
+}
+.buyMes .promotion .pri{
+  font-weight: bold;
+  font-size: 48rpx;
+}
+.buyMes .original{
+  color: #aaa;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+.buyMes .original .pri{
+  text-decoration: line-through;
+}
+.buyMes .count{
+  float: right;
+  line-height: 84rpx;
+  color: #AAA;
+}
+.introTitle{
+  background-color: #eceff5;
+  width: 710rpx;
+  padding: 0rpx 20rpx;
+  line-height: 68rpx;
+  height: 68rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+.introCon{
+  width: 710rpx;
+  padding: 0rpx 20rpx;
+  line-height: 36rpx;
+  height: 36rpx;
+  font-size: 30rpx;
+}
+.pdOperate{
+  width: 710rpx;
+  padding: 10rpx 20rpx;
+  position: fixed;
+  height: 72rpx;
+  left: 0rpx;
+  bottom: 0rpx;
+  z-index: 100;
+  background-color: #FFF;
+  border-top: 1px solid #e8e8e8;
+}
+.pdOperate .btn{
+  background: url(http://pls.asj.com/images/O2O/icons-btn-menu.png) no-repeat;
+  background-size: 48rpx 1200rpx;
+}
+.pdOperate .homeBtn{
+  width: 84rpx;
+  height: 24rpx;
+  padding-top: 48rpx;
+  line-height: 24rpx;
+  text-align: center;
+  font-size: 24rpx;
+  float: left;
+  color: #382070;
+  background-position: center -510rpx;
+}
+.pdOperate .cartBtn{
+  width: 84rpx;
+  height: 72rpx;
+  position: relative;
+  float: left;
+  background-size: 60rpx 1500rpx;
+  background-position: center -880rpx;
+}
+.pdOperate .cartNum{
+  height: 28rpx;
+  line-height: 28rpx;
+  position: absolute;
+  min-width: 28rpx;
+  top:0rpx;
+  left: 36rpx;
+  font-size: 20rpx;
+  background-color: #F00;
+  color: #FFF;
+  border-radius: 14rpx;
+  text-align: center;
+}
+.pdOperate .addCart{
+  width: 260rpx;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  height: 72rpx;
+  line-height: 72rpx;
+  border: 1px solid #382070;
+  color: #382070;
+  font-size: 32rpx;
+}
+.pdOperate .soldOut{
+  float: right;
+  width: 520rpx;
+  border: 1px solid #999;
+  color: #999;
+}
+.pdOperate .toWrite{
+  float: right;
+  width: 260rpx;
+  text-align: center;
+  height: 72rpx;
+  line-height: 72rpx;
+  background-color: #382070;
+  color: #FFF;
+  font-size: 32rpx;
+}

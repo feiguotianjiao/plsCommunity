@@ -1,0 +1,185 @@
+/*  
+  Author:HouLei
+  Contact:353731385@qq.com
+  tel:15963115707
+  Github: https://github.com/feiguotianjiao/pls_wxApp.git
+*/
+/**index.wxss**/
+#topCon{
+  width: 710rpx;
+  height: 64rpx;
+  padding: 0rpx 20rpx;
+  line-height: 64rpx;
+  background-color: #FFF;
+  border-bottom: 1px solid #f2f2f2;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+}
+#topCon .tip{
+  float: left;
+}
+#topCon .toChange{
+  float: right;
+  height: 100%;
+  font-size: 24rpx;
+  color: #382070;
+  padding-left: 40rpx;
+  background: url(http://pls.asj.com/images/O2O/repo/Refresh.png) no-repeat 0 center;
+  background-size: 26rpx;
+}
+#pdList{
+  padding-top: 64rpx;
+  width: 100%;
+}
+#pdList .pdCon{
+  width:100%;
+  border-top: 1px solid #aa85ff;
+  border-bottom: 1px solid #aa85ff;
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+}
+#pdList .name{
+  width:710rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  padding: 0rpx 20rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+#pdList .buyMes{
+  width:710rpx;
+  padding:10rpx 20rpx;
+  height: 84rpx;
+  background-color: #eceff5;
+}
+#pdList .price{
+  float: left;
+  padding-right: 20rpx;
+}
+#pdList .promotion{
+  height: 52rpx;
+  color: #ff3d00;
+  line-height: 52rpx;
+}
+#pdList .promotion .pri{
+  font-weight: bold;
+  font-size: 48rpx;
+}
+#pdList .original{
+  color: #aaa;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+#pdList .original .pri{
+  text-decoration: line-through;
+}
+#pdList .countTime{
+  float: left;
+  color: #AAA;
+}
+#pdList .count{
+  line-height: 48rpx;
+}
+#pdList .time{
+  line-height: 36rpx;
+}
+#pdList .time .val{
+  width: 36rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  background-color: #c1b5fe;
+  color: #755bfd;
+  margin: 0rpx 4rpx;
+  text-align: center;
+  display: inline-block;
+}
+#pdList .addCart{
+  float: right;
+  background-color:#382070;
+  font-size: 26rpx;
+  color: #FFF;
+  text-align: center;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 28rpx;
+  padding: 0rpx 30rpx;
+  margin-top: 14rpx;
+}
+#pdList .soldOut{
+  background-color:#999;
+}
+#pdList .buyers{
+  width:710rpx;
+  padding:10rpx 20rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  color: #AAA;
+  overflow: hidden;
+  border-top: 1px solid #aa85ff;
+  background-color: #eceff5;
+}
+#pdList .buyers .tip{
+  float: right;
+}
+#pdList .buyers .buyer{
+  float: right;
+  margin-bottom: 10rpx;
+}
+#pdList .buyers .buyer .photo{
+  float: left;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+}
+#pdList .buyers .buyer .uName{
+  float: left;
+  width: 70rpx;
+  margin-right: 8rpx;
+}
+.telTip{
+  width: 100%;
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #000;
+  background-color: #d0c0f7;
+}
+.telCon{
+  width: 710rpx;
+  padding: 20rpx;
+  height: 124rpx;
+}
+.telCon .left{
+  float: left;
+}
+.telCon .title{
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.telCon .telNo{
+  height: 72rpx;
+  line-height: 72rpx;
+  color: #382070;
+  font-weight: bold;
+  font-size: 48rpx;
+}
+.telCon .telDes{
+  float: right;
+  padding-left: 68rpx;
+  background: url(http://pls.asj.com/images/O2O/xcx/icon-tel-xc.png) no-repeat 0 center;
+  margin-top: 34rpx;
+  background-size: 68rpx 48rpx;
+}
+.telCon .telDes .theDes{
+  height: 54rpx;
+  line-height: 54rpx;
+  padding: 0rpx 30rpx;
+  background-color: #382070;
+  color: #FFF;
+  border-radius: 27rpx;
+}

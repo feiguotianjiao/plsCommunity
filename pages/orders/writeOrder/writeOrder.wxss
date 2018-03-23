@@ -1,0 +1,238 @@
+/*  
+  Author:HouLei
+  Contact:353731385@qq.com
+  tel:15963115707
+  Github: https://github.com/feiguotianjiao/pls_wxApp.git
+*/
+/**writeOrder.wxss**/
+
+.container {
+  display: block;
+  background-color: #f2f2f2;
+  font-family: 'arial', '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53';
+  font-size: 28rpx;
+  height: auto;
+  padding-bottom: 140rpx;
+  min-height: auto;
+}
+
+.writeMes {
+  width: 720rpx;
+  padding-left: 30rpx;
+  height: 92rpx;
+  position: relative;
+  padding-bottom: 4px;
+  background: url(http://pls.asj.com/images/O2O/border-bg.png) bottom repeat-x #fffbee;
+}
+
+.writeMes .ipt {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0 10rpx;
+  position: relative;
+  top: 10rpx;
+  background: transparent;
+  border: 0px none;
+  box-sizing: border-box;
+}
+
+.writeMes .name {
+  width: 40%;
+  padding-left: 50rpx;
+  height: 90rpx;
+  float: left;
+  background: url(http://pls.asj.com/images/O2O/icon-user-blue-40.png) no-repeat left;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.writeMes .name .ipt {
+  border-right: 1px solid #ddd;
+}
+
+.writeMes .phone {
+  width: 60%;
+  height: 90rpx;
+  float: left;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.writeMes .getPhone {
+  width: 60%;
+  height: 90rpx;
+  background-color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.menus {
+  margin-top: 30rpx;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.menus .menu {
+  width: 100%;
+  line-height: 100rpx;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+
+.menus .menu .title {
+  color: #999;
+  width: 26%;
+  float: left;
+}
+
+.menus .menu .content {
+  width: 74%;
+  float: right;
+  position: relative;
+  display: none;
+}
+
+.menus .menu .isSel {
+  display: block;
+}
+
+.menus .menu .isSel .sel {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 10rpx;
+  left: 8rpx;
+  background: url(http://pls.asj.com/images/O2O/icon-right-green-40.png) no-repeat;
+  background-size: contain;
+}
+
+.menus .menu .takeAddress {
+  line-height: 52rpx;
+  padding: 24rpx 0rpx;
+}
+
+.orderIpt {
+  width: 94%;
+  height: 90rpx;
+  line-height: 90rpx;
+  position: relative;
+  padding: 0 2%;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  left: 1%;
+  margin-top: 30rpx;
+  border: 0px none;
+  background-color: #ddd;
+  color: #999;
+}
+
+.orderPds {
+  width: 98%;
+  position: relative;
+  padding: 16rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  left: 1%;
+  margin-top: 30rpx;
+  background-color: #fff;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.orderPds .pd {
+  border-top: 1px solid #ddd;
+  padding: 16rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.orderPds .pd image {
+  width: 104rpx;
+  height: 104rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.orderPds .pd .name {
+  width: 520rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  float: left;
+}
+
+.orderPds .pd .pri {
+  width: 520rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  margin-top: 32rpx;
+  float: left;
+  color: #ff3434;
+}
+
+.orderPds .pd .count {
+  height: 32rpx;
+  line-height: 32rpx;
+  position: absolute;
+  top: 60rpx;
+  right: 10rpx;
+  float: left;
+  color: #999;
+}
+.orderPds .totalTip {
+  width: 100%;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: right;
+}
+
+.goShop {
+  width: 86%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #372070;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  position: relative;
+  left: 7%;
+}
+
+.toOrder {
+  width: 690rpx;
+  border-top: 1px solid #372070;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #eee;
+  height: 68rpx;
+  z-index: 2;
+  padding: 20rpx 30rpx;
+}
+
+.toOrder .pri {
+  float: left;
+  line-height: 68rpx;
+}
+
+.toOrder .btn {
+  float: right;
+  line-height: 64rpx;
+  padding: 0 50rpx;
+  border-radius: 34rpx;
+  border: 1px solid #372070;
+  text-align: center;
+  background-color: #fff;
+}
+
+@import "/utils/wetoast/wetoast.wxss";

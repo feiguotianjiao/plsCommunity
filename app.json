@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/cart/cart",
+    "pages/member/myIndex/myIndex",
+    "pages/member/about/about",
+    "pages/member/list/list",
+    "pages/member/addAddress/addAddress",
+    "pages/product/detail/detail",
+    "pages/orders/orderList/orderList",
+    "pages/orders/writeOrder/writeOrder",
+    "pages/orders/orderPay/orderPay",
+    "pages/orders/detail/detail",
+    "pages/orders/success/success"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#382070",
+    "navigationBarTitleText": "拍立送微购",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#555",
+    "selectedColor": "#382070",
+    "backgroundColor": "#FFF",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/tabBar_home.png",
+        "selectedIconPath": "pages/images/tabBar_home_selected.png"
+      },
+      {
+        "pagePath": "pages/product/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/images/tabBar_cart.png",
+        "selectedIconPath": "pages/images/tabBar_cart_selected.png"
+      },
+      {
+        "pagePath": "pages/member/myIndex/myIndex",
+        "text": "我的",
+        "iconPath": "pages/images/tabBar_my.png",
+        "selectedIconPath": "pages/images/tabBar_my_selected.png"
+      }
+    ]
+  }
+}

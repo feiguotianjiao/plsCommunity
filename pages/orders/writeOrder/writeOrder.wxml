@@ -1,0 +1,51 @@
+<!--writeOrder.wxml-->
+<import src="/utils/wetoast/wetoast.wxml"/>
+<template is="wetoast" data="{{...__wetoast__}}"/>
+<view class="container">
+  <view class="writeMes">
+    <view class="name">
+      <input type="text" bindblur="changeIptVal" data-ipt="name" value='{{consignee}}' class="ipt" placeholder="输入收货人姓名" />
+    </view>
+    <view class="phone">
+      <input type="text" bindblur="changeIptVal" data-ipt="mobile" value='{{mobile}}' class="ipt" placeholder="输入联系方式" />
+    </view>
+    <button class='getPhone' style='{{getPhoneStyle}}' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" catchtap='getPhoneAfter'> </button>
+  </view>
+  <view class="menus">
+    <view class="menu" style="border-top:0px none;">
+      <view class="title">支付方式</view>
+      <view class="content isSel" catchtap="changePay" data-index="1">微信支付
+        <view class="sel"></view>
+      </view>
+    </view>
+  </view>
+  <view class="menus">
+    <view class="menu" style="border-top:0px none;">
+      <view class="title">自提地址</view>
+      <view class="content isSel takeAddress">
+        {{userData.shopAddress}}
+      </view>
+    </view>
+  </view>
+  <input class="orderIpt" bindblur="changeIptVal" data-ipt="notice" placeholder="订单如有特殊要求，请注明" />
+  <view class="orderPds">
+    <block wx:for="{{userData.cartList}}" wx:for-item="itemName" wx:for-index="idx" wx:key="{{idx}}">
+      <view wx:if="{{idx == 0}}" class="pd" style="border-top:0px none;">
+        <view class="name overTxt">{{itemName.pdName}}</view>
+        <view class="pri">{{itemName.price}}</view>
+        <view class="count">×{{itemName.num}}</view>
+      </view>
+      <view wx:else class="pd">
+        <view class="name overTxt">{{itemName.pdName}}</view>
+        <view class="pri">{{itemName.price}}</view>
+        <view class="count">×{{itemName.num}}</view>
+      </view>
+    </block>
+    <view class="totalTip"><text style="font-weight:bold;">商品合计：</text>{{userData.totalNum}}　<text style="color:#f00;">{{userData.totalPrice}}</text></view>
+  </view>
+  <navigator open-type="navigateBack" class="goShop">返回修改商品</navigator>
+  <view class="toOrder">
+    <view class="pri">实付 <text style="color:#F00;">￥{{totalPay}}</text></view>
+    <view class="btn" catchtap="toSubmit" hover-class="navigator-hover">立即下单</view>
+  </view>
+</view>

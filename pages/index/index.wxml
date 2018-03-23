@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<import src="/utils/wetoast/wetoast.wxml" />
+<template is="wetoast" data="{{...__wetoast__}}" />
+<view class="container">
+  <view id='topCon'>
+    <view class='tip'>本期团购</view>
+    <navigator class='toChange' url='/pages/member/list/list'>切换小区</navigator>
+  </view>
+  <view id='pdList'>
+    <navigator wx:for="{{pdList}}" wx:for-index="idt" wx:for-item="pdItem" wx:key="{{idt}}" url="/pages/product/detail/detail?shopId={{shopId}}&&pdId={{pdItem.pdId}}" class='pdCon'>
+      <view class='img'>
+        <image mode="widthFix" src="http://image.asj.com{{pdItem.imageList[0]}}" />
+      </view>
+      <view class='name overTxt'>【{{pdItem.pdName}}】 {{pdItem.model}}</view>
+      <view class='buyMes'>
+        <view wx:if="{{pdItem.pdPromotePrice}}" class="price">
+          <view class='promotion'>团购价:￥<text class='pri'>{{pdItem.pdPromotePrice}}</text></view>
+          <view class='original'>零售价:￥<text class='pri'>{{pdItem.pdPrice}}</text></view>
+        </view>
+        <view wx:else class="price">
+          <view class='promotion'>团购价:￥<text class='pri'>{{pdItem.pdPrice}}</text></view>
+          <view wx:if="{{pdItem.pdMarketPrice}}" class='original'>零售价:￥<text class='pri'>{{pdItem.pdMarketPrice}}</text></view>
+        </view>
+        <view class='countTime'>
+          <view class='count' style='line-height:80rpx;'>剩余{{pdItem.pdstore}}份</view>
+        </view>
+        <view wx:if="{{pdItem.isSelling}}" class='addCart' catchtap='addCart' data-pdid='{{pdItem.pdId}}'>加入购物车</view>
+        <view wx:else class='addCart soldOut'>已售罄</view>
+      </view>
+    </navigator>
+    <!--<navigator url='/pages/product/detail/detail' class='pdCon'>
+      <view class='img'>
+        <image mode="widthFix" src="http://image.asj.com/o2oImageAd//2018/3/2/10/1058151519959495854.jpg" />
+      </view>
+      <view class='name overTxt'>【三八节促销活动】 1件</view>
+      <view class='buyMes'>
+        <view class='price'>
+          <view class='promotion'>团购价:￥<text class='pri'>32.6</text></view>
+          <view class='original'>零售价:￥<text class='pri'>56.6</text></view>
+        </view>
+        <view class='countTime'>
+          <view class='count'>剩余可售库存1000份</view>
+          <view class='time'>剩:<text class='val'>01</text>天<text class='val'>13</text>:<text class='val'>25</text>:<text class='val'>36</text></view>
+        </view>
+        <view class='addCart'>加入购物车</view>
+      </view>
+      <view class='buyers'>
+        <view class='tip'>…等刚刚购买了此商品</view>
+        <view class='buyer'>
+          <view class='photo'><image mode='widthFix' src='http://image.asj.com//memberImage/120X120/201611241711000041k72_head.jpg'></image></view>
+          <view class='uName overTxt'>爱随缘爱随缘</view>
+        </view>
+        <view class='buyer'>
+          <view class='photo'><image mode='widthFix' src='http://image.asj.com//memberImage/120X120/201611241711000041k72_head.jpg'></image></view>
+          <view class='uName overTxt'>爱随缘爱随缘</view>
+        </view>
+        <view class='buyer'>
+          <view class='photo'><image mode='widthFix' src='http://image.asj.com//memberImage/120X120/201611241711000041k72_head.jpg'></image></view>
+          <view class='uName overTxt'>爱随缘爱随缘</view>
+        </view>
+        <view class='buyer'>
+          <view class='photo'><image mode='widthFix' src='http://image.asj.com//memberImage/120X120/201611241711000041k72_head.jpg'></image></view>
+          <view class='uName overTxt'>爱随缘爱随缘</view>
+        </view>
+      </view>
+    </navigator>-->
+  </view>
+  <view class='telTip'>- 拍立送微购入驻指南 -</view>
+  <view class='telCon' catchtap='toCall' data-phone='400-6666-520'>
+    <view class='left'>
+      <view class='title'>拍立送微购团长免费加盟</view>
+      <view class='telNo'>400-6666-520</view>
+    </view>
+    <view class='telDes'>
+      <view class='theDes'>加 盟</view>
+    </view>
+  </view>
+  <view class='telCon' catchtap='toCall' data-phone='0538-5629999'>
+    <view class='left'>
+      <view class='title'>拍立送微购优质供应商入驻</view>
+      <view class='telNo'>0538-5629999</view>
+    </view>
+    <view class='telDes'>
+      <view class='theDes'>入驻</view>
+    </view>
+  </view>
+  <view class="toTop" catchtap="toTop" style="{{toTop_style}}">
+    <image mode="widthFix" src="http://image.asj.com/images/O2O/toTop_white.png?t=20161028" />
+  </view>
+</view>

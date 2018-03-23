@@ -1,0 +1,18 @@
+<!--list.wxml-->
+<view class="container">
+  <view catchtap="goMap" class="goMap" hover-class="navigator-hover">
+    <view class="inner">点击去地图更换定位</view>
+  </view>
+  <view wx:for="{{shopList}}" wx:for-item="itemName" wx:for-index="idx" wx:key="{{idx}}" class="shop_view" hover-class='navigator-hover' catchtap='changeShop' data-lat='{{itemName.lat}}' data-lon='{{itemName.lon}}' data-shopid='{{itemName.shopId}}'>
+    <view class="name">{{itemName.shopName}}</view>
+    <view class="address">地址：{{itemName.address}}</view>
+  </view>
+  <view class="bottom_tipTxt" style="{{bottom_tipStyle}}">正在加载数据……</view>
+  <view class="toTop" catchtap="toTop" style="{{toTop_style}}">
+    <image mode="widthFix" src="http://image.asj.com/images/O2O/toTop_white.png?t=20161028"/>
+  </view>
+  <view id="nav">
+   <navigator open-type="switchTab" url="/pages/index/index" class="home"></navigator>
+   <navigator open-type="switchTab" url="/pages/member/myIndex/myIndex" class="my"></navigator>
+  </view>
+</view>

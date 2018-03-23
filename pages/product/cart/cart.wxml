@@ -1,0 +1,38 @@
+<!--cart.wxml-->
+<view class="container">
+  <block wx:if="{{shopCartList.pdlist.length > 0}}">
+    <view class="cartContent">
+      <view class="cartItems">
+        <navigator wx:for="{{shopCartList.pdlist}}" wx:for-index="idt" wx:for-item="pdItem" wx:key="{{idt}}" class="cartItem" url="/pages/product/detail/detail?shopId={{shopId}}&&pdId={{pdItem.pdId}}">
+          <view wx:if="{{pdItem.isSel}}" class="check toCheck checked" hover-class="navigator-hover" data-pdid='{{pdItem.pdId}}' catchtap='cancelSel'></view>
+          <view wx:else class="check toCheck" hover-class="navigator-hover" data-pdid='{{pdItem.pdId}}' catchtap='changeSel'></view>
+          <view class="pdContent">
+            <image src="{{pdItem.imageurl}}"></image>
+            <view class="name overTxt">{{pdItem.pdName}}</view>
+            <view class="pri">￥{{pdItem.price}}</view>
+          </view>
+          <view class="changeCount">
+            <view class="change cartMinus" data-pdid='{{pdItem.pdId}}' hover-class="navigator-hover" catchtap='reduceCount'></view>
+            <view class="count">{{pdItem.num}}</view>
+            <view class="change cartPlus" data-pdid='{{pdItem.pdId}}' hover-class="navigator-hover" catchtap='addCount'></view>
+          </view>
+          <view class="toDel" data-pdid='{{pdItem.pdId}}' hover-class="navigator-hover" catchtap='delPd'></view>
+        </navigator>
+      </view>
+    </view>
+    <view class='toOrder'>
+      <view wx:if="{{totalNum > totalSelNum}}" hover-class="navigator-hover" catchtap='changeAllSel' class="check allCheck">全选</view>
+      <view wx:else hover-class="navigator-hover" catchtap='cancelAllSel' class="check allCheck checked">取消</view>
+      <view class='totalPri'>共计:￥
+        <text class='pri'>{{totalPri}}</text>
+      </view>
+      <view class='writeOrder' catchtap="toWriteOrder" hover-class="navigator-hover">去结算</view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='noPds'>
+      <text class='tip'>您的购物车是空的，去选些商品吧~~</text>
+      <navigator class='goInd' open-type='switchTab' url='/pages/index/index'>去首页逛逛</navigator>
+    </view>
+  </block>
+</view>

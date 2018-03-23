@@ -1,0 +1,203 @@
+/*  
+  Author:HouLei
+  Contact:353731385@qq.com
+  tel:15963115707
+  Github: https://github.com/feiguotianjiao/pls_wxApp.git
+*/
+
+/**cart.wxss**/
+page{
+  background-color: #fbfbfb;
+}
+
+.noPds {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  padding-top: 216rpx;
+  background: url(http://image.asj.com/images/O2O/shopcart/cart_nopd.png) center top no-repeat;
+  background-size: 280rpx 216rpx;
+  overflow: hidden;
+}
+
+.noPds .tip {
+  width: 100%;
+  line-height: 48rpx;
+}
+
+.noPds .goInd {
+  width: 300rpx;
+  color: #fff;
+  background-color: #382070;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  display: block;
+  margin: 20rpx auto;
+  clear: both;
+  float: none;
+}
+.check {
+  position: absolute;
+  background-image: url(http://pls.asj.com/images/O2O/shopcart/jd_ck.png);
+  background-size: 40rpx 440rpx;
+  background-repeat: no-repeat;
+}
+
+.cartContent {
+  width: 100%;
+  font-size: 28rpx;
+  padding-bottom: 90rpx;
+}
+.cartContent .cartItems {
+  transition: height 500ms;
+}
+
+.cartContent .cartItem {
+  position: relative;
+  padding: 20rpx 0;
+  line-height: 72rpx;
+  color: #333;
+  padding-left: 80rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #FFF;
+  margin-bottom: 20rpx;
+}
+
+.cartContent .cartItem .toCheck {
+  z-index: 3;
+  left: 0;
+  top: 12rpx;
+  width: 100rpx;
+  height: 120rpx;
+  background-position: 20rpx 40rpx;
+}
+
+.cartContent .cartItem .checked {
+  background-position: 20rpx -360rpx;
+}
+
+.cartContent .pdContent {
+  width: 670rpx;
+  position: relative;
+}
+
+.cartContent .pdContent image {
+  width: 104rpx;
+  height: 104rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.cartContent .pdContent .name {
+  width: 546rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  float: left;
+}
+
+.cartContent .pdContent .pri {
+  width: 546rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  margin-top: 32rpx;
+  font-size: 32rpx;
+  float: left;
+  color: #ff3434;
+}
+
+.cartContent .changeCount {
+  position: absolute;
+  top: 56rpx;
+  right: 80rpx;
+  width: 232rpx;
+}
+
+.cartContent .changeCount .change {
+  width: 100rpx;
+  height: 80rpx;
+  background-image: url(http://pls.asj.com/images/O2O/shopcart/jd_op.png);
+  background-repeat: no-repeat;
+  background-size: 54rpx 216rpx;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.cartContent .changeCount .cartMinus {
+  background-position: center -148rpx;
+  left: 0rpx;
+}
+
+.cartContent .changeCount .cartPlus {
+  background-position: center 12rpx;
+  right: 0rpx;
+}
+
+.cartContent .changeCount .count {
+  width: 72rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+  text-align: center;
+  font-size: 32rpx;
+  position: relative;
+  left: 80rpx;
+}
+.cartContent .toDel{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top:56rpx;
+  right: 0rpx;
+  background: url(http://pls.asj.com/images/O2O/shopcart/jd_delete.png) center center no-repeat;
+  background-size: 38rpx 36rpx;
+}
+.toOrder{
+  width: 710rpx;
+  padding: 20rpx;
+  background-color: #FFF;
+  border-top: 1px solid #e8e8e8;
+  line-height: 48rpx;
+  height: 48rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 10;
+}
+.toOrder .allCheck{
+  height: 80rpx;
+  position: relative;
+  float: left;
+  top:-16rpx;
+  line-height: 80rpx;
+  background-position: 20rpx 20rpx;
+  left: -20rpx;
+  padding-left: 80rpx;
+}
+.toOrder .checked {
+  background-position: 20rpx -380rpx;
+}
+.toOrder .totalPri{
+  float: left;
+  position: relative;
+  left:160rpx;
+  top:-5rpx;
+}
+.toOrder .totalPri .pri{
+  color: #ff3434;
+  font-size: 40rpx;
+}
+.toOrder .writeOrder{
+  float: right;
+  background-color: #382070;
+  padding: 0 56rpx;
+  position: relative;
+  top:-10rpx;
+  line-height: 68rpx;
+  color: #FFF;
+  right:-10rpx;
+}

@@ -1,0 +1,31 @@
+<!--detail.wxml-->
+<view class="container">
+  <swiper class="detail_swiper" indicator-dots indicator-color="rgba(56,32,112, .3)" indicator-active-color="#382070" circular interval="2000" duration="500">
+    <swiper-item wx:for="{{swiperImg}}" wx:key="*this">
+      <image mode='aspectFit' bindtap="previewImg" data-url="{{item}}" src="{{item}}" />
+    </swiper-item>
+  </swiper>
+  <view class='buyMes'>
+    <view class='price'>
+      <view class='promotion'>团购价:￥<text class='pri'>{{cost}}</text></view>
+      <view wx:if="{{price}}" class='original'>零售价:￥<text class='pri'>{{price}}</text></view>
+    </view>
+    <view class='count'>剩余可售库存{{pdstore}}份</view>
+  </view>
+  <view class='name overTxt'>{{pdName}}</view>
+  <view class='introTitle'>商品说明</view>
+  <view class='introCon'><text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;{{introduce}}</text></view>
+  <view class='pdOperate'>
+    <navigator open-type='switchTab' url='/pages/index/index' class='btn homeBtn'>回首页</navigator>
+    <navigator open-type='switchTab' url='/pages/product/cart/cart' class='btn cartBtn'>
+      <view class='cartNum'>{{cartCount}}</view>
+    </navigator>
+    <block wx:if='{{isSelling}}'>
+      <view class='addCart' catchtap='addCart' data-pdid='{{pdId}}'>加入购物车</view>
+      <navigator url='/pages/orders/writeOrder/writeOrder?shopId={{shopId}}&pdsJson={{pdId}}:1&isPd=1' class='toWrite'>立即购买</navigator>
+    </block>
+    <block wx:else>
+      <view class='addCart soldOut'>已售罄，敬请期待……</view>
+    </block>
+  </view>
+</view>

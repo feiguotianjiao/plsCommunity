@@ -1,0 +1,17 @@
+<!--about.wxml-->
+<!--detail.wxml-->
+<view class="container">
+  <view class="shop_view">
+    <view class="shop_logo">
+      <image mode="widthFix" src="{{shopDetail.shopLogo}}" />
+    </view>
+    <view class="name overTxt">{{shopDetail.shopName}}</view>
+    <view class="time">营业时间：{{shopDetail.openingTime}} -- {{shopDetail.endingTime}}</view>
+    <view class="time">地址：{{shopDetail.address}}</view>
+    <view class="notice">{{shopDetail.notice}}</view>
+  </view>
+  <view id="nav">
+   <navigator open-type="switchTab" url="/pages/index/index" class="home"></navigator>
+   <navigator open-type="switchTab" url="/pages/member/myIndex/myIndex" class="my"></navigator>
+  </view>
+</view>

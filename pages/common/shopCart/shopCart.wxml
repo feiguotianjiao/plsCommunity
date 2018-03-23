@@ -1,0 +1,138 @@
+<!--shopCart.wxml-->
+  <view class="shopCart">
+    <view class="border"></view>
+    <view class="cartTip light" hover-class="navigator-hover" style="{{cartTip_top}}" catchtap="showSwich" data-isShow="{{isShow}}">
+      <view class="count">10</view>
+    </view>
+    <view class="cartMes" style="{{cartMes_left}}">
+      <view class="pri">￥206.40</view>
+      <view class="costList">
+        <view class="first">配送费：<text>￥0.00</text></view>
+        <view class="second">差<text>￥0.00</text>免配送费</view>
+      </view>
+    </view>
+    <navigator url="/pages/orders/writeOrder/writeOrder" class="toWriteOrder">去结算</navigator>
+    <view class="cartContent" style="{{cartContent_top}}">
+      <view class="arr"></view>
+      <view class="top">
+        <view hover-class="navigator-hover" class="check toCheckAll checked">全选</view>
+        <text class="checkCount">（已选10件）</text>
+        <view class="clearCart">清空购物车</view>
+      </view>
+      <view class="cartItems" style="{{cartItems_style}}">
+        <view class="cartItem">
+          <view class="check toCheck" hover-class="navigator-hover"></view>
+          <view class="pdContent">
+            <image src="http://image.asj.com/oo/base/product/image/201612261525471959172149488.jpg"></image>
+            <view class="name overTxt">伊利 QQ星草莓味酸奶 120g</view>
+            <view class="pri">￥4.50</view>
+          </view>
+          <view class="changeCount">
+            <view class="change cartMinus" hover-class="navigator-hover"></view>
+            <view class="count">1</view>
+            <view class="change cartPlus" hover-class="navigator-hover"></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem">
+          <view class="check toCheck checked"></view>
+          <view class="pdContent">
+            <image src="http://image.asj.com/oo/base/product/image/20151121059224382812038926.jpg"></image>
+            <view class="name overTxt">早天下 雪梨 约3斤</view>
+            <view class="pri">￥4.50</view>
+          </view>
+          <view class="changeCount">
+            <view class="change cartMinus" hover-class="navigator-hover"></view>
+            <view class="count">3</view>
+            <view class="change cartPlus" hover-class="navigator-hover"></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem">
+          <view class="check toCheck checked"></view>
+          <view class="pdContent">
+            <image src="http://image.asj.com/oo/base/product/image/201652693829598789337686.jpg"></image>
+            <view class=" name overTxt ">早天下 水蜜桃 约1000g</view>
+            <view class="pri">￥6.00</view>
+          </view>
+          <view class="changeCount ">
+            <view class="change cartMinus " hover-class="navigator-hover "></view>
+            <view class="count ">1</view>
+            <view class="change cartPlus " hover-class="navigator-hover "></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem ">
+          <view class="check toCheck checked "></view>
+          <view class="pdContent ">
+            <image src="http://image.asj.com/oo/base/product/image/20156595771790015738348.jpg "></image>
+            <view class="name overTxt ">早天下 柠檬 约1斤</view>
+            <view class="pri">￥8.50</view>
+          </view>
+          <view class="changeCount ">
+            <view class="change cartMinus " hover-class="navigator-hover "></view>
+            <view class="count ">1</view>
+            <view class="change cartPlus " hover-class="navigator-hover "></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem ">
+          <view class="check toCheck checked "></view>
+          <view class="pdContent ">
+            <image src="http://image.asj.com/oo/base/product/image/201565100148696148492325.jpg "></image>
+            <view class="name overTxt ">早天下 皇冠梨 约2斤</view>
+            <view class="pri">￥5.60</view>
+          </view>
+          <view class="changeCount ">
+            <view class="change cartMinus " hover-class="navigator-hover "></view>
+            <view class="count ">1</view>
+            <view class="change cartPlus " hover-class="navigator-hover "></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem ">
+          <view class="check toCheck checked "></view>
+          <view class="pdContent ">
+            <image src="http://image.asj.com/oo/base/product/image/20155241650177622312848725.jpg "></image>
+            <view class="name overTxt ">早天下 沂源富士苹果80# 约5斤</view>
+            <view class="pri">￥10.00</view>
+          </view>
+          <view class="changeCount ">
+            <view class="change cartMinus " hover-class="navigator-hover "></view>
+            <view class="count ">1</view>
+            <view class="change cartPlus " hover-class="navigator-hover "></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem ">
+          <view class="check toCheck checked "></view>
+          <view class="pdContent ">
+            <image src="http://image.asj.com/oo/base/product/image/20155241651371556558486535.jpg "></image>
+            <view class="name overTxt ">早天下 雪梨 10斤约13-15个</view>
+            <view class="pri">￥16.80</view>
+          </view>
+          <view class="changeCount ">
+            <view class="change cartMinus " hover-class="navigator-hover "></view>
+            <view class="count ">1</view>
+            <view class="change cartPlus " hover-class="navigator-hover "></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+        <view class="cartItem ">
+          <view class="check toCheck checked "></view>
+          <view class="pdContent ">
+            <image src="http://image.asj.com/oo/base/product/image/20178141113533836779452668.jpg "></image>
+            <view class="name overTxt ">蓝月亮 机洗绝配洗衣液套装 亮白增艳+深层洁净 2.36kg*2</view>
+            <view class="pri">￥139.00</view>
+          </view>
+          <view class="changeCount ">
+            <view class="change cartMinus " hover-class="navigator-hover "></view>
+            <view class="count ">1</view>
+            <view class="change cartPlus " hover-class="navigator-hover "></view>
+          </view>
+          <view class="innerBorder"></view>
+        </view>
+      </view>
+    </view>
+    <view class="mask" style="{{mask_style}}"></view>
+  </view>

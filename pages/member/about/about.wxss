@@ -1,0 +1,43 @@
+/**about.wxss**/
+.shop_view {
+  width: 734rpx;
+  position: relative;
+  padding: 10rpx;
+  overflow: auto;
+}
+
+.shop_view .shop_logo {
+  float: left;
+  width: 186rpx;
+  height: 186rpx;
+  overflow: hidden;
+}
+
+.shop_view .name {
+  float: left;
+  padding-left: 14rpx;
+  width: 500rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.shop_view .time {
+  float: left;
+  padding-left: 14rpx;
+  width: 500rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.shop_view .notice {
+  float: left;
+  width: 460rpx;
+  line-height: 36rpx;
+  height: 72rpx;
+  overflow: hidden;
+  padding-left: 14rpx;
+}

@@ -1,0 +1,10 @@
+/*  
+  Author:HouLei
+  Contact:353731385@qq.com
+  tel:15963115707
+  Github: https://github.com/feiguotianjiao/pls_wxApp.git
+*/
+/**orderPay.wxss**/
+page{
+  background-color: #f2f2f2;
+}

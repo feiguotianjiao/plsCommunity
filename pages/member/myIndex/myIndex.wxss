@@ -1,0 +1,93 @@
+/*  
+  Author:HouLei
+  Contact:353731385@qq.com
+  tel:15963115707
+  Github: https://github.com/feiguotianjiao/pls_wxApp.git
+*/
+/**myIndex.wxss**/
+
+page {
+  background-color: #f4f4f4;
+}
+
+.member {
+  display: block;
+  width: 690rpx;
+  padding: 12rpx 30rpx;
+  height: 96rpx;
+  border-bottom: 1px solid #e4e4e4;
+  background: url(http://image.asj.com/images/O2O/icon-arr-gray-102.png) no-repeat right #fff;
+  background-size: 100rpx 120rpx;
+}
+
+.member .img {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.member .nickname {
+  float: left;
+  width: 560rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  clear: right;
+}
+
+.member .level {
+  float: left;
+  width: 520rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 20rpx;
+  clear: right;
+  color: #999;
+  padding-left: 40rpx;
+  background: url(http://image.asj.com/images/O2O/icon-level-gray-35.png) no-repeat left;
+  background-size: contain;
+}
+
+.menus {
+  width: 100%;
+  margin-top: 20rpx;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #FFF;
+  overflow: auto;
+}
+
+.menus .title {
+  width: 710rpx;
+  padding: 0rpx 20rpx;
+  border-bottom: 1px solid #e4e4e4;
+  line-height: 64rpx;
+}
+
+.menus .item {
+  float: left;
+  padding-top: 60rpx;
+  padding-bottom: 16rpx;
+  margin: 0rpx 20rpx;
+}
+.menus .all {
+  background: url(http://image.asj.com/images/O2O/xcx/allOrder.png) no-repeat center 10rpx;
+  background-size: 50rpx;
+}
+.menus .pre {
+  background: url(http://image.asj.com/images/O2O/xcx/preOrder.png) no-repeat center 10rpx;
+  background-size: 50rpx;
+}
+.menus .complete {
+  background: url(http://image.asj.com/images/O2O/xcx/completeOrder.png) no-repeat center 10rpx;
+  background-size: 50rpx;
+}
+.menus .about {
+  background: url(http://image.asj.com/images/O2O/xcx/about.png) no-repeat center 10rpx;
+  background-size: 50rpx;
+}
+
+
+@import "/utils/wetoast/wetoast.wxss";
